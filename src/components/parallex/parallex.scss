@@ -1,0 +1,18 @@
+.parallex{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#59595900,rgb(160, 160, 160));
+    position: relative;
+    h1{
+        font-weight: bold;
+        position: absolute;
+    }
+    p{
+        position: absolute;
+        top: 40%;
+        font-weight: bold;
+    }
+}

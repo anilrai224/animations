@@ -1,0 +1,39 @@
+.hero{
+    height: calc(100vh - 80px);
+
+    .container{
+        height: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .textContainer{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            h2,h1{
+                font-weight: bold;
+                font-size: 40px;
+            }
+            .btn{
+                display:flex;
+                gap: 20px;
+                margin-top: 20px;
+                button{
+                    padding: 10px 15px;
+                    border-radius: 12px;
+                    border: 1px solid black;
+                    background-color: transparent;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        h1{
+            width: 50%;
+            text-align: center;
+        }
+    }
+}

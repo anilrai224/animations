@@ -1,0 +1,64 @@
+.animation{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+    // gap:20px;
+    .container{
+        display: flex;
+        height: 320px;
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+        .one{
+            position: absolute;
+            bottom: 0;
+            p{
+                background-color: red;
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 120px;
+                    border-bottom: 2px solid black;
+                    position: absolute;
+                    left: -20px;
+                    right: 0;
+                    transform: translate(-50%,-50%);
+                    bottom: -61px;
+                    transform: rotate(90deg);
+                }
+            }
+            &:nth-child(1){
+                transform: rotate(-90deg);
+                left: 0;
+                bottom: 0;
+            }
+            &:nth-child(2){
+                transform: rotate(-50deg);
+                left: 45px;
+                bottom: 150px;
+            }
+            &:nth-child(3){
+                transform: rotate(0deg);
+                left: 210px;
+                bottom: 230px;
+            }
+            &:nth-child(4){
+                transform: rotate(50deg);
+                left: 380px;
+                bottom: 150px;
+            }
+            &:nth-child(5){
+                transform: rotate(90deg);
+                left: 420px;
+                bottom: 0;
+            }
+        }
+    }
+}

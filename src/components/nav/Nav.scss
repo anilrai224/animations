@@ -1,0 +1,23 @@
+.nav{
+    background-color: aquamarine;
+    height: 80px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        max-width: 1200px;
+        margin: auto;
+    
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+            @media (max-width:450px) {
+                display: none;
+            }
+        }
+    }
+}
